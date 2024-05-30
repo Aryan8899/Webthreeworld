@@ -1,3 +1,21 @@
+# CoinCapMarket Homepage Replica
+This project is a homepage replica of CoinCapMarket. To run this project, you need to have an API from a cryptocurrency website. After applying the API, you can start the project using the following instructions.
+
+
+# API Setup
+1) Create a `API key` from any Cryptocurrency site.
+2) Replace it with the header ` headers: {
+                              "X-CMC_PRO_API_KEY": "Your API key",
+                            }, `
+
+
+# Running the Project
+After applying the API, you can start the project by running the following command in the project directory:
+### `node index.js` 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +86,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+# Screenshots
+
+![Project Screenshot](./SCREENSHOT/PIC1.png)
+![Project Screenshot](./SCREENSHOT/PIC2.png)
+![Project Screenshot](./SCREENSHOT/PIC3.png)
+
+
