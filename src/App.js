@@ -1,19 +1,34 @@
 import React from "react";
 import Nav from "./Comp/Nav";
-import New from "./Comp/New" // Correct the import statement and use uppercase 'Nav'
 import CryptoTable from "./Comp/CryptoTable";
 import Left from "./Comp/Leftover";
 import Foot from "./Comp/Fotter";
+import News from "./news/news"; // Ensure the correct import path for the News component
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import New from "./Comp/New";
+
+function Home() {
+  return (
+    <>
+      <New/>
+      <CryptoTable />
+      <Left />
+      <Foot />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div>
-      <Nav />
-       <New/>{/* Render the Nav component using JSX syntax */}
-       <CryptoTable/>
-       <Left/>
-       <Foot/>
-    </div>
+    <Router>
+      <div>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/news" element={<News />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
